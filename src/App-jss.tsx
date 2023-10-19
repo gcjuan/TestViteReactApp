@@ -2,15 +2,16 @@ import { useState } from "react";
 import "./style.css";
 import { createUseStyles } from "react-jss";
 
+export const useStyles = createUseStyles({
+  button: {
+    backgroundColor: "red",
+    width: "100px",
+    height: 50,
+  },
+});
+
 function App() {
-  // JSS block starts here
-  const useStyles = createUseStyles({
-    button: {
-      backgroundColor: "red",
-    },
-  });
   const classes = useStyles();
-  // JSS block ends here
 
   const [count, setCount] = useState(0);
   const onClick = () => setCount((count) => count + 1);
@@ -19,14 +20,12 @@ function App() {
     <div>
       <h1>Vite + React</h1>
       <h3>Css-in-Js Demo with JSS</h3>
-      <div className="card">
+      <div>
         <button className={classes.button} onClick={onClick}>
           count is {count}
         </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <p className="footer">Click on the Vite and React logos to learn more</p>
     </div>
   );
 }

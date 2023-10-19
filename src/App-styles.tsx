@@ -11,10 +11,8 @@ function App() {
       <h3>Inline Styles Demo</h3>
       <div
         style={{
-          padding: "2em",
+          padding: "1em",
           border: "2px solid black",
-          backgroundColor: "peachpuff",
-          paddingTop: "50px",
         }}
       >
         <button

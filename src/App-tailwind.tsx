@@ -12,9 +12,7 @@ function App() {
       <div className="bg-[#75c4e1] pt-5 pb-5">
         <button onClick={onClick}>count is {count}</button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <p>Click on the Vite and React logos to learn more</p>
     </div>
   );
 }
